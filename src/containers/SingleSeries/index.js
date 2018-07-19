@@ -26,7 +26,7 @@ class SingleSeries extends Component {
         let {show} = this.state;
         let regexp = /<p>|<b>|<\/p>|<\/b>/gm;
         
-        {this.state.show !== null?
+        this.state.show !== null?
             views = (
                 <div className="single-show">
                     <div className="show-image">
@@ -47,7 +47,7 @@ class SingleSeries extends Component {
                     </div>
                 </div>
             ):views=(<div style={{marginLeft:"50%"}}><Loader /></div>);
-        }
+        
         
         return(
             <div>
