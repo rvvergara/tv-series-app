@@ -20,7 +20,7 @@ class Series extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     componentDidMount(){
-        this.loadShows("Vikings");
+        this.loadShows("Walking Dead");
       }
     
     async loadShows(title){
