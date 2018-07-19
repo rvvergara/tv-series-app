@@ -1,5 +1,5 @@
-const APIURL = "http://api.tvmaze.com/search/shows?q=";
-const SHOWBASEURL = "http://api.tvmaze.com/shows/";
+const APIURL = "https://api.tvmaze.com/search/shows?q=";
+const SHOWBASEURL = "https://api.tvmaze.com/shows/";
 
 export async function getShow(show){
     return fetch(APIURL+show)
