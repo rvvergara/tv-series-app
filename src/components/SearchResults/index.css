@@ -1,0 +1,13 @@
+.search-results {
+    border: 1px solid #ccc;
+    text-align: center;
+    width:33%;
+    position: absolute;
+    left: 33.33%;
+    z-index: 10;
+    background-color: white;
+}
+
+.search-results a:hover {
+    font-weight: bold;
+}

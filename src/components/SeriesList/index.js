@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./index.css";
 
 const SeriesListItem = ({series}) => {
@@ -9,12 +10,16 @@ const SeriesListItem = ({series}) => {
     return(
         <div className="series-list-item">
             <div className="series-image">
-               <a href={series.show.url}><img src={imageURL} alt={series.show.name} /></a>
+               <Link to={`/series/${series.show.id}`}>
+                    <img src={imageURL} alt={series.show.name} />
+                </Link>
             </div>
             <div className="series-details">
-                <h3 className="title"><a href={series.show.url}>{series.show.name}</a></h3>
-                <span><strong>Genres:</strong></span>
-                <span>
+                <Link to={`/series/${series.show.id}`}>
+                    <h3 className="title">{series.show.name}</h3>
+                </Link>
+                <span className="genres-head"><strong>Genres:</strong></span>
+                <span className="genres">
                     {series.show.genres.map((g,i)=>(
                         <span key={i}> {g} </span>
                     ))}
@@ -25,7 +30,7 @@ const SeriesListItem = ({series}) => {
 }
 const SeriesList = ({list}) => {
     return(
-        <div>
+        <div className="series-container">
             {list.map(s =>(
                 <SeriesListItem 
                     series={s} 

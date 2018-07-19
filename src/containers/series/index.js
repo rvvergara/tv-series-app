@@ -3,7 +3,8 @@ import * as apiCalls from "../../components/App/api";
 import SeriesList from "../../components/SeriesList";
 import Form from "../../components/Form";
 import SearchResults from "../../components/SearchResults";
-import Loader from "../../components/Loader"
+import Intro from "../../components/Intro";
+import Loader from "../../components/Loader";
 import "./index.css";
 
 class Series extends Component {
@@ -59,6 +60,7 @@ class Series extends Component {
 
         return(
             <div>
+                <Intro message = "Here you can find all of your most loved series" />
                 <div>
                     <Form 
                     onChange={this.handleChange}

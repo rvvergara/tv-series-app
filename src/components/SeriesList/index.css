@@ -3,9 +3,30 @@
     padding-left: 0;
 }
 
+.series-container {
+    margin: 30px auto;
+    max-width: 80%;
+    padding-left: 40px;
+}
+
 .series-list-item {
     float: left;
     margin: 10px;
+}
+
+.series-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.genres-head,.genres {
+    font-size: 0.85em;
+}
+
+.title {
+    margin: 0;
+    font-size: 0.95em;
+    text-align: center;
 }
 
 img {

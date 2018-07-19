@@ -1,0 +1,13 @@
+.single-show {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.single-show div {
+    max-width: 45%;
+}
+
+a {
+    color: #1d1d8d;
+}
